@@ -1,0 +1,26 @@
+{
+	"name": "pi-gentle-shell-opencode-go-subscription",
+	"version": "0.1.0",
+	"private": true,
+	"description": "OpenCode Go subscription usage in Gentle Shell's sidebar Status card, toggleable with /opencode-go.",
+	"type": "module",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/anibalardid/pi-gentle-shell-opencode-go-subscription.git"
+	},
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"scripts": {
+		"test": "node --no-warnings --experimental-strip-types --test test/*.test.ts",
+		"install-extension": "node scripts/install.mjs",
+		"smoke": "node scripts/smoke.mjs",
+		"check": "node --no-warnings --experimental-strip-types scripts/check.ts"
+	},
+	"engines": {
+		"node": ">=22.6"
+	}
+}
